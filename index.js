@@ -1,9 +1,9 @@
 let RandomNumber = Math.floor(Math.random()*100)+1;
-let score = 0;
+let Attempts = 0;
 
 while(true){
     let UserGuess = Number(prompt("Enter a number between 1-100"))
-    score++;
+    Attempts++;
 
     if(isNaN(UserGuess)){
         alert("Only Numbers are allowed")
@@ -15,7 +15,7 @@ while(true){
     }else if(UserGuess<RandomNumber){
         alert("Your Guess is low! try another number")
     }else{
-        alert("Congrats! You guess the number in " + score + " tries \n Your score is " + (101 - score))
+        alert("Congrats! You guess the number in " + Attempts + " Tries \n Your score is " + (101 - Attempts))
         break;
     }
 }
